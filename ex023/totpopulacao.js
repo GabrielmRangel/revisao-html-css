@@ -3,7 +3,7 @@ var totPopulacao = document.querySelector('.totpopulacao');
 var somaPopTot = 0;
 
 for (let i = 0; i < listaNumPopulacoes.length; i++) {
-    let numPopulacao = parseInt(listaNumPopulacoes[i].textContent.replace(/\./g, ""));
+    let numPopulacao = parseInt(listaNumPopulacoes[i].textContent.replace(/\.|\s/g, ""));
 
     if(isNaN(numPopulacao)){
         listaNumPopulacoes[i].textContent = 0;
